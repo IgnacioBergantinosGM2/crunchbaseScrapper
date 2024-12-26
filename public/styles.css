@@ -1,0 +1,68 @@
+body {
+	margin: 0;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	height: 100dvh;
+}
+
+main {
+	text-align: center;
+	min-width: 25em;
+	max-width: 38em;
+	font-family: monospace;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	margin-bottom: 0.5em;
+	font-weight: bold;
+}
+
+input {
+	margin-bottom: 1em;
+}
+
+button {
+	border: 0;
+	color: white;
+	height: 2em;
+	background-color: #742ee5;
+	border-radius: 0.4em;
+	cursor: pointer;
+}
+
+button:disabled {
+	background-color: #9161dd;
+	cursor: progress;
+}
+
+#warning {
+	color: #d5ba07;
+	font-weight: bold;
+}
+
+.extras {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1em;
+	gap: 1.5em;
+	& input {
+		margin: 0;
+		margin-bottom: 0;
+	}
+	& label {
+		margin: 0;
+	}
+	& div {
+		display: flex;
+		gap: 0.5em;
+		justify-content: center;
+		align-items: center;
+	}
+}

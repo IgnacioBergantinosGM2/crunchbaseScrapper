@@ -1,0 +1,19 @@
+{
+	"name": "crunchbase-scrapper",
+	"version": "1.0.0",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"@playwright/test": "^1.49.0",
+		"@types/node": "^22.10.1"
+	},
+	"dependencies": {
+		"dotenv": "^16.4.7",
+		"express": "^4.21.2"
+	}
+}

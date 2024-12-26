@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Crunchbase Import</title>
+	</head>
+	<body>
+		<main>
+			<h1>Crunchbase List Importer</h1>
+			<p>
+				<span id="warning">WARNING</span> This software works using a web scrapper so the processing
+				time could change depending on how long is the list that you want to import
+			</p>
+			<form id="importForm">
+				<label for="cb_username">Crunchbase Username</label>
+				<input id="cb_username" type="text" required />
+
+				<label for="cb_password">Crunchbase Password</label>
+				<input id="cb_password" type="password" required />
+
+				<label for="apollo_username">Apollo Username</label>
+				<input id="apollo_username" type="text" required disabled />
+
+				<label for="apollo_password">Apollo Password</label>
+				<input id="apollo_password" type="password" required disabled />
+
+				<label for="cb_list">Target Crunchbase List</label>
+				<input id="cb_list" type="text" required />
+
+				<div class="extras">
+					<div class="donwload_csv">
+						<input id="download_csv" type="checkbox" />
+						<label for="download_csv">Do you want to download the csv?</label>
+					</div>
+					<div class="import_apollo">
+						<input id="import_apollo" type="checkbox" />
+						<label for="import_apollo">Import to Apollo?</label>
+					</div>
+				</div>
+
+				<button id="importButton" type="submit">Import</button>
+			</form>
+		</main>
+		<script src="script.js" defer></script>
+	</body>
+</html>
